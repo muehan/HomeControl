@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <environment names="Development">
+        <link asp-href-include="~/css/*.css" rel="stylesheet"/>
+    </environment>
+    <environment names="Staging, Production">
+        <link href="~/css/min/site.min.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+<div>
+    @RenderBody()
+</div>
+
+    <environment names="Development">
+        <script asp-src-include="~/js/*.js" rel="stylesheet"></script>
+    </environment>
+    <environment names="Staging, Production">
+        <script href="~/js/min/site.min.js" rel="stylesheet"></script>
+    </environment>
+</body>
+</html>
