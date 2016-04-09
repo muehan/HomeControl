@@ -64,5 +64,5 @@ gulp.task("copy:font", function () {
         .pipe(gulp.dest(paths.fontDest));
 });
 
-gulp.task("min", ["min:js", "min:css"]);
+gulp.task("min", ["min:js", "min:css", "copy:fonts"]);
 gulp.task("copy", ["copy:js", "copy:css", "copy:fonts"]);
