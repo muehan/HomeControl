@@ -1,4 +1,5 @@
-﻿/// <reference path="bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js" />
+﻿/// <binding AfterBuild='copy:font' />
+/// <reference path="bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js" />
 /// <binding AfterBuild='copy:css, copy:font, copy:js' />
 /*
 This file in the main entry point for defining Gulp tasks and using Gulp plugins.
