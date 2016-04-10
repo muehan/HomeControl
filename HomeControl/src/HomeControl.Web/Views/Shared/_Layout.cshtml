@@ -17,34 +17,34 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">HomeControl</a>
+                <a class="navbar-brand" asp-action="Index" asp-controller="Home">HomeControl</a>
             </div>
             
             <!-- /.navbar-top-links -->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
+                    <ul class="nav" id="side-menu" aria-expanded="false">
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a asp-action="Index" asp-controller="Home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Temp<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level collapse" aria-expanded="false">
                                 <li>
-                                    <a href="flot.html">Outside</a>
+                                    <a asp-action="outsideTemp" asp-controller="Temp">Outside</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Inside<span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
+                                    <a>Inside<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level collapse" aria-expanded="false">
                                         <li>
-                                            <a href="#">Wohnzimmer</a>
+                                            <a asp-action="LivingRoom" asp-controller="Temp">Wohnzimmer</a>
                                         </li>
                                         <li>
-                                            <a href="#">B&uuml;ro</a>
+                                            <a asp-action="Office" asp-controller="Temp">B&uuml;ro</a>
                                         </li>
                                         <li>
-                                            <a href="#">K&uuml;che</a>
+                                            <a asp-action="Kitchen" asp-controller="Temp">K&uuml;che</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -62,8 +62,9 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-        @RenderBody()
+        <div id="page-wrapper" style="min-height: 1024px;">
+            @RenderBody()
+        </div>
     </div>
 
     <script src="~/js/jquery.js"></script>
