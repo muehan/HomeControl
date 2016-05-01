@@ -1,0 +1,14 @@
+<lights>
+  <light>
+    <name>Büro1</name>
+    <link>192.168.0.1/api/lights/1</link>
+  </light>
+  <light>
+    <name>Büro2</name>
+    <link>192.168.0.1/api/lights/2</link>
+  </light>
+  <light>
+    <name>Wohnzimmer</name>
+    <link>192.168.0.1/api/lights/3</link>
+  </light>
+</lights>

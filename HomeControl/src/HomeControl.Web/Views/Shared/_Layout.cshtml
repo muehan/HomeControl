@@ -19,7 +19,7 @@
                 </button>
                 <a class="navbar-brand" asp-action="Index" asp-controller="Home">HomeControl</a>
             </div>
-            
+
             <!-- /.navbar-top-links -->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -32,19 +32,19 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Temp<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse" aria-expanded="false">
                                 <li>
-                                    <a asp-action="outsideTemp" asp-controller="Temp">Outside</a>
+                                    @Html.ActionLink("Aussen", "outdoor", "Temperatur")
                                 </li>
                                 <li>
-                                    <a>Inside<span class="fa arrow"></span></a>
+                                    <a>Innen<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level collapse" aria-expanded="false">
                                         <li>
-                                            <a asp-action="LivingRoom" asp-controller="Temp">Wohnzimmer</a>
+                                            @Html.ActionLink("Wohnzimmer", "indoor", "Temperatur", new { @room = "livingroom" })
                                         </li>
                                         <li>
-                                            <a asp-action="Office" asp-controller="Temp">B&uuml;ro</a>
+                                            @Html.ActionLink("Büro", "indoor", "Temperatur", new { @room = "office" })
                                         </li>
                                         <li>
-                                            <a asp-action="Kitchen" asp-controller="Temp">K&uuml;che</a>
+                                            @Html.ActionLink("Küche", "indoor", "Temperatur", new { @room = "kitchen" })
                                         </li>
                                     </ul>
                                 </li>
@@ -53,9 +53,9 @@
                         </li>
 
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Lights</a>
+                            <a href="/lights/index"><i class="fa fa-table fa-fw"></i> Licht</a>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
