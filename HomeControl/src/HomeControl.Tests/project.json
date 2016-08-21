@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+  "description": "HomeControl.Tests Class Library",
+  "authors": [ "andre" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": { }
+  },
+  "dependencies": {
+    "HomeControl.DataAccess": "1.0.0-*",
+    "Microsoft.CSharp": "4.0.1",
+    "xunit": "2.1.0"
+  }
+}
