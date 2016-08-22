@@ -1,0 +1,28 @@
+﻿[
+  {
+    "room": {
+      "Name": "Büro",
+      "Lights": [
+        {
+          "Name": "Büro1",
+          "url": "http://192.168.1.21/api/1"
+        },
+        {
+          "Name": "Büro2",
+          "url": "http://192.168.1.21/api/2"
+        }
+      ]
+    }
+  },
+  {
+    "room": {
+      "Name": "Wohnzimmer",
+      "Lights": [
+        {
+          "Name": "Wohnzimmer1",
+          "url": "http://192.168.1.21/api/3"
+        }
+      ]
+    }
+  }
+]

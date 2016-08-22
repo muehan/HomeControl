@@ -10,7 +10,7 @@ namespace HomeControl.DataAccess
 
         public List<Room> GetRooms()
         {
-            string json = File.ReadAllText("~./Config/rooms.json");
+            string json = File.ReadAllText("~./Configuration/rooms.json");
 
             List<Room> rooms = JsonConvert.DeserializeObject<List<Room>>(json);
 
