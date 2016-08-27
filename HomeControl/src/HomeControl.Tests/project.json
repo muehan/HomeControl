@@ -6,11 +6,11 @@
   "projectUrl": "",
   "licenseUrl": "",
   "frameworks": {
-    "net451": { }
+    "dnx451": { }
   },
   "dependencies": {
     "HomeControl.DataAccess": "1.0.0-*",
     "Microsoft.CSharp": "4.0.1",
-    "xunit": "2.1.0"
+    "NUnit": "3.4.1"
   }
 }

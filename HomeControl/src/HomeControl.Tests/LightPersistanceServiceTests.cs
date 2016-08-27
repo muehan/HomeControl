@@ -1,16 +1,17 @@
 ﻿using HomeControl.DataAccess;
-using Xunit;
+using NUnit.Framework;
 
 namespace HomeControl.Tests
 {
-    
+    [TestFixture]
     public class LightPersistanceServiceTests
     {
 
-        //[Fact]
+        [Test]
         public void GetRooms_void_Returns()
         {
             var dut = new LightPersistanceService();
+            var rooms = dut.GetRooms();
         }
 
     }
